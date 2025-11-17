@@ -1,0 +1,112 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --tip-bg-light: #e0f7fa;
+  --tip-border-light: #00acc1;
+  --warning-bg-light: #fff3e0;
+  --warning-border-light: #ff9800;
+  --note-bg-light: #f3f4f6;
+  --note-border-light: #607d8b;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --tip-bg-light: #00363a;
+  --tip-border-light: #26c6da;
+  --warning-bg-light: #4e342e;
+  --warning-border-light: #ffb74d;
+  --note-bg-light: #263238;
+  --note-border-light: #90a4ae;
+}
+
+.tip,
+.warning,
+.note {
+  padding: 1em;
+  margin: 1em 0;
+  border-left: 4px solid;
+  border-radius: 4px;
+}
+
+.tip {
+  background-color: var(--tip-bg-light);
+  border-color: var(--tip-border-light);
+}
+
+.warning {
+  background-color: var(--warning-bg-light);
+  border-color: var(--warning-border-light);
+}
+
+.note {
+  background-color: var(--note-bg-light);
+  border-color: var(--note-border-light);
+}
+
+/* start page*/
+.hero {
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.features,
+.community {
+  margin-top: 3rem;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features ul,
+.community ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features li,
+.community li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
